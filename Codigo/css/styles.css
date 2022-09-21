@@ -2,15 +2,15 @@
 
 @font-face {
     font-family: title;
-    src: url(./font/Roboto-Bold.ttf);    
+    src: url(../font/Roboto-Bold.ttf);    
 }
 @font-face {
     font-family: subtitle;
-    src: url(./font/Roboto-Medium.ttf);    
+    src: url(../font/Roboto-Medium.ttf);    
 }
 @font-face {
     font-family: parrafo;
-    src: url(./font/Roboto-Regular.ttf);    
+    src: url(../font/Roboto-Regular.ttf);    
 }
 
 :root {
@@ -71,6 +71,7 @@
 .header__nav ul li a {
     font-family: "subtitulo", sans-serif;
     font-weight: bolder;
+    text-align: center;
     color: var(--blanco);
 }
 
@@ -102,7 +103,6 @@
 }
 
 .content__section-images {
-    width: 80vw;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -120,20 +120,25 @@
     line-height: 1.30em; 
     color: var(--blanco);
     text-shadow: -1px 3px 5px rgba(0,0,0,0.6);
-    animation: title 2.5s ease 0s normal none;
+    animation: title 2.5s ease 0s;
+}
+
+#images__title span{
+    font-family:"title", sans-serif;
+    color: var(--amarillo);    
 }
 
 @keyframes title {
 	0% {
 		animation-timing-function: ease-in;
 		opacity: 1;
-		transform: translateY(-45px);
+		transform: translateY(-100px); /*baja desde del nav*/
 	}
 
 	24% {
 		opacity: 1;
 	}
-
+    /* rebote */
 	40% {
 		animation-timing-function: ease-in;
 		transform: translateY(-24px);
@@ -152,8 +157,9 @@
 	93% {
 		animation-timing-function: ease-in;
 		transform: translateY(-4px);
-	}
 
+	}
+  
 	25%,
 	55%,
 	75%,
@@ -169,10 +175,6 @@
 	}
 }
 
-#images__title span{
-    font-family:"title", sans-serif;
-    color: var(--amarillo);    
-}
 
 .content__section-images a{
     font-family: "subtitle", sans-serif;
@@ -180,39 +182,10 @@
     text-decoration: none;
     color: var(--grisTopo);
     background-color: var(--blanco);
-    padding: 5px 63px;
+    padding: 5px 50px;
     border: 4px solid var(--amarillo);
     border-radius: 50px;
     box-shadow: -7px 6px 14px 0px rgba(0,0,0,0.70);
-    animation: btn 2s ease 3.5s normal none;
-}
-
-@keyframes btn {
-	0%,
-	100% {
-		transform: translateX(0);
-	}
-
-	10%,
-	30%,
-	50%,
-	70% {
-		transform: translateX(-10px);
-	}
-
-	20%,
-	40%,
-	60% {
-		transform: translateX(10px);
-	}
-
-	80% {
-		transform: translateX(8px);
-	}
-
-	90% {
-		transform: translateX(-8px);
-	}
 }
 
 .content__section-images a:hover{
@@ -222,6 +195,16 @@
     transition:0.5s 0s ease-in-out;
 }
 
+@media screen and (min-width: 992px){
+    #images__title {
+      font-size: 3em; /*48px*/
+    }
+    .content__section-images a {
+        font-size: 1.25em; /*20px*/
+        padding: 10px 87px;
+    }
+
+}
 
 
 /* ............................................
@@ -235,12 +218,12 @@
 }
 
 #section__queHacemos h2{
-    font-family: "subtitle", sans-serif;
+    font-family: "subtitle";
     color: var(--blanco);
     text-align: center;
     font-size: 1.25em; /*20px*/ 
     margin-bottom: 1.85em; /*30px*/ 
-    font-weight: bolder;  
+    
 }
 
 #section__queHacemos .cards img{
@@ -279,7 +262,6 @@
     border: 4px solid var(--amarillo);
     border-radius: 50px;
     box-shadow: -7px 6px 14px 0px rgba(0,0,0,0.70);
-    margin-top: 30px;
 }
 
 .section__queHacemos-btn a:hover{
@@ -288,6 +270,28 @@
     border: var(--blanco) 4px solid;
     transition:0.5s 0s ease-in-out;
 }
+
+
+@media screen and (min-width: 992px){
+    .section__queHacemos-btn a {
+       font-size: 1.25em; /*20px*/
+        padding: 10px 84px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #section__queHacemos h2 {
+       font-size: 1.5em; /*24px*/
+    }
+    #section__queHacemos .cards img {
+        width: 5em;
+    }
+
+    #section__queHacemos .cards p {
+       font-size: 1.125em; /*18px*/
+    }
+}
+
 
 /* ....................................
 ........section__marcas.................
@@ -300,7 +304,7 @@
 
 #section__marcas .section__marcas-content{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
     padding: 15px;
@@ -310,6 +314,17 @@
     width: 2em;
 }
 
+@media screen and (min-width: 992px){
+    #section__marcas .section__marcas-content img {
+        width: 4em;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #section__marcas .section__marcas-content img {
+        width: 5em;
+    }
+}
 
 /* ....................................
 ................footer................
@@ -369,25 +384,54 @@
 }
 
 
+@media screen and (min-width: 992px){
+    #footer .footer__content {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    #footer span {
+       font-size: 1em; /*16px*/
+    }
+    .footer__redesSociales li img {
+        width: 2.5em;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .footer__redesSociales li img {
+        width: 3em;
+    }
+}
 
 /* fin del footer */
+
 
 /*................................
 ......... PAGINA PRODUCTOS..................
 .................................... */
 
-#product{
+#product {
     position: relative;
-    width: 100%;
-    margin-top: 6.25em; /*100px*/
+    margin-top: 4.5em;
+    text-align: center;
 }
 
 .product__images-fondo{
-    background-image: url(../images/fondo-productos.png);
+    background-image: url(../images/);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-position: top center;
-    
+    background-attachment: fixed;
+    top: 0;
+}
+
+#product .product__images-fondo h2{
+    font-family: "subtitle", sans-serif;
+    color: var(--amarillo);
+    text-align: center;
+    font-size: 1.25em; /*20px*/ 
+    margin-bottom: 1.85em; /*30px*/ 
+   
 }
 
 .product__content{
@@ -404,24 +448,26 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    border: var(--amarillo) solid 2px;
-    border-radius: 10px;
-    box-shadow: -7px 6px 14px 0px rgba(0,0,0,0.70);   
 }
 
 .product__content-card img{
-    width: 5em; /*80px*/
+    width: 4em; /*64px*/
     margin-top: 15px;
+}
+
+.product__content-card h3{
+    font-family: "subtitle", sans-serif;
+    color: var(--amarillo);
+    text-align: center;
+    font-size: 1.25em; /*20px*/
 }
 
 .product__content-card p{
     font-family: "parrafo", sans-serif;
     color: var(--blanco);
-    text-align: justify;
-    font-size: 1em;/*16px*/  
+    text-align: justify;  
     line-height: 24px; 
-    padding: 20px;  
-    
+    padding: 0 20px 0 20px; 
 }
 
 @media screen and (min-width: 992px) {
