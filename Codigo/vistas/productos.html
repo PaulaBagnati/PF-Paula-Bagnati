@@ -8,77 +8,95 @@
     <title>Lubriservice Los Incas |Productos</title>
     <link rel="icon" type="imagen/png" href="../images/logo.ico">
 
+    <!-- Bootstrap v5.2.1-->
+    <!-- estilos css  -->
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
+
+    <!-- js-->
+    <script src="../css/bootstrap/js/bootstrap.min.js"></script>
+
     <!-- estilos -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
-    <header>
-        <div class="header__content">
 
-            <div class="header__logo">
-                <img src="../images/logoBlanco.png" alt="Logo Lubriservice">
-                 <span>Lubriservice Los Incas</span>
- 
-             </div>
-            
-             
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./contacto.html">Contactanos</a></li>
+<body id="body__style">
+
+    <header id="section__header">
+        <nav class="navbar navbar-expand-lg header__nav">
+            <div class="container">
+              <a class="navbar-brand nav__logo" href="./index.html"> <img src="../images/logoBlanco.png" alt="Logo Lubriservice"><span>Lubriservice Los Incas</span></a>
+              <button class="navbar-toggler nav__btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span><img src="../images/logo-navbar.png" alt=""></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav ">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contáctanos</a>
+                  </li>
+                 
                 </ul>
-            </nav>
-
-
-        </div>
+              </div>
+            </div>
+        </nav>
     </header>
 
      <!-- section marcas -->
-     <article class="article__product">
+    <article id="product">
 
-        <div class="article__product-content">
+        <div class="product__images-fondo">
 
-            <div class="article__product-card">
+            <div class="container">
 
-                <div>
-                    <img src="../images/Producto1.png" alt="">
-                </div>
+                <div class="product__content">
 
-                <div>
-                    <p>Es un lubricante aceite 5w30 diseñado con alta tecnología,
-                        lo cual garantiza el cuidado del motor de tu automóvil,
-                        permitiendo que puedas disfrutar de un producto de 5 litros,
-                        para que dispongas de una cantidad que no te ofrecen otros
-                        aceites de motores.</p>
+                    <div class="product__content-card">
+                        <div>
+                            <img src="../images/Producto1.png" alt="">
+                        </div>
+
+                        <div>
+                            <p>Es un lubricante aceite 5w30 diseñado con alta tecnología,
+                                lo cual garantiza el cuidado del motor de tu automóvil,
+                                permitiendo que puedas disfrutar de un producto de 5 litros,
+                                para que dispongas de una cantidad que no te ofrecen otros
+                                aceites de motores.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="product__content-card">
+                        <div>
+                            <img src="../images/producto2.png" alt="">
+                        </div>
+                        <div>
+                            <p>Mobil Super Synthetic es un aceite para motores completamente sintético que ofrece 80% mejor protección que la industria¹. Brinda protección excepcional a las partes críticas de tu motor en un amplio rango de temperaturas de operación, climas y condiciones de manejo.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="product__content-card">
+                        <div>
+                            <img src="../images/producto4.png" alt="">   
+                        </div>
+                        <div>
+                            <p>La viscosidad del aceite 10w40 es la indicada para tanto para motores nuevos como otros con mayor desgaste. Es por ello que está considerado el mejor aceite para motos 4 tiempos.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
-
-            <div class="article__product-card">
-                <div>
-                    <img src="../images/producto2.png" alt="">
-                </div>
-                <div>
-                    <p>Mobil Super Synthetic es un aceite para motores completamente sintético que ofrece 80% mejor protección que la industria¹. Brinda protección excepcional a las partes críticas de tu motor en un amplio rango de temperaturas de operación, climas y condiciones de manejo.</p>
-                </div>
-            </div>
-
-            <div class="article__product-card">
-                <div>
-                    <img src="../images/producto4.png" alt="">   
-                </div>
-                <div>
-                    <p>La viscosidad del aceite 10w40 es la indicada para tanto para motores nuevos como otros con mayor desgaste. Es por ello que está considerado el mejor aceite para motos 4 tiempos.</p>
-                </div>
-            </div>
-
-
-           
-           
-          
-           
 
         </div>
        
@@ -86,28 +104,29 @@
 
 
      <!-- footer -->
-     <footer>
+    <footer id="footer">
 
         <div class="footer__content">
 
             <div class="footer__ubicacion">
+                
                 <img src="../images/ubicacion.png" alt="ubicacion">
-
-               <div>
-                    <p>Av de los Incas 5411</p>
-                </div>               
-     
-               
+                <span>Av. de los Incas 5411</span>
             </div>
 
             <div class="footer__redesSociales">
+                
                 <ul>
                     <li><a href="https://www.instagram.com/lubricentrolacroze/?hl=es"  target="blank"><img src="../images/instagram.png" alt=""></a></li>
                     <li><a href="https://www.facebook.com/profile.php?id=100083582521637"  target="blank"><img src="../images/face.png" alt=""></a></li>
                 </ul>
+
             </div>
+
         </div>
-      
+
+       
     </footer>
+
 </body>
 </html>
