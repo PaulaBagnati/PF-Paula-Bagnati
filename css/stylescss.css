@@ -130,7 +130,6 @@
 .content__section-images a {
   font-family: "Roboto-Medium", sans-serif;
   font-weight: bolder;
-  font-size: none;
   text-align: center;
   color: #4d4d4d;
   text-decoration: none;
@@ -181,13 +180,11 @@
         width: 5em; } }
   #section__queHacemos h3 {
     font-family: "Roboto-Medium", sans-serif;
-    font-weight: none;
     font-size: 1.05em;
     text-align: center;
     color: #eebd2c; }
   #section__queHacemos p {
     font-family: "Roboto-Regular", sans-serif;
-    font-weight: none;
     font-size: 0.85em;
     text-align: justify;
     color: #f1f1f1;
@@ -204,7 +201,6 @@
   .section__queHacemos-btn a {
     font-family: "Roboto-Medium", sans-serif;
     font-weight: bolder;
-    font-size: none;
     text-align: center;
     color: #4d4d4d;
     text-decoration: none;
@@ -319,7 +315,6 @@
 
 .product__images-fondo h2 {
   font-family: "Roboto-Medium", sans-serif;
-  font-weight: none;
   font-size: 1.25em;
   text-align: center;
   color: #f1f1f1;
@@ -364,14 +359,11 @@
         margin-bottom: 15px; } }
   .product__content-card h3 {
     font-family: "Roboto-Medium", sans-serif;
-    font-weight: none;
     font-size: 1.25em;
     text-align: center;
     color: #eebd2c; }
   .product__content-card p {
     font-family: "Roboto-Medium", sans-serif;
-    font-weight: none;
-    font-size: none;
     text-align: justify;
     color: #f1f1f1;
     line-height: 25px;
@@ -458,7 +450,6 @@
     .section__form .section__form-btn a {
       font-family: "Roboto-Medium", sans-serif;
       font-weight: bolder;
-      font-size: none;
       text-align: center;
       color: #4d4d4d;
       text-decoration: none;
@@ -482,13 +473,11 @@
   padding: 15px; }
   .section__info h2 {
     font-family: "Roboto-Medium", sans-serif;
-    font-weight: none;
     font-size: 1.15em;
     text-align: left;
     color: #eebd2c; }
   .section__info p {
     font-family: "Roboto-Regular", sans-serif;
-    font-weight: none;
     font-size: 1em;
     text-align: left;
     color: #f1f1f1; }
@@ -508,13 +497,11 @@
       width: 30%; }
       .section__info h2 {
         font-family: "Roboto-Medium", sans-serif;
-        font-weight: none;
         font-size: 1.55em;
         text-align: left;
         color: #eebd2c; }
       .section__info p {
         font-family: "Roboto-Regular", sans-serif;
-        font-weight: none;
         font-size: 1.15em;
         text-align: left;
         color: #f1f1f1; } }
@@ -539,7 +526,6 @@
       box-shadow: -7px 6px 14px 0px rgba(0, 0, 0, 0.7); }
   .nosotros__content h2 {
     font-family: "Roboto-Medium", sans-serif;
-    font-weight: none;
     font-size: 1.125em;
     text-align: center;
     color: #f1f1f1;
@@ -565,7 +551,6 @@
         gap: 40px; } }
     .nosotros__content .nosotros__text p {
       font-family: "Roboto-Regular", sans-serif;
-      font-weight: none;
       font-size: 1em;
       text-align: justify;
       color: #f1f1f1;
@@ -573,7 +558,6 @@
       @media screen and (min-width: 992px) {
         .nosotros__content .nosotros__text p {
           font-family: "Roboto-Medium", sans-serif;
-          font-weight: none;
           font-size: 1.15em;
           text-align: justify;
           color: #f1f1f1; } }
@@ -611,7 +595,6 @@
       color: #4d4d4d; }
     .gracias .__content p {
       font-family: "Roboto-Medium", sans-serif;
-      font-weight: none;
       font-size: 1em;
       text-align: center;
       color: #4d4d4d; }

@@ -8,10 +8,12 @@ $title: 'Roboto-Bold', sans-serif;
 $subtitle: 'Roboto-Medium', sans-serif;
 $text: 'Roboto-Regular', sans-serif;
 
-@mixin fuentes($family , $bold , $size , $font-align , $font-color){
+@mixin fuentes($family , $bold, $size , $font-align , $font-color){
     font-family: $family;
-    font-weight: $bold;
-    font-size: $size;
+
+    @if $bold != "none" {font-weight: $bold;}
+    @if $size != "none" {font-size: $size;}
+   
     text-align: $font-align;
     color: $font-color;
 }
@@ -139,7 +141,7 @@ $color-amarillo: #eebd2c;
         transform: translate(-50%, -50%); }
 
         #images__title {
-            @include fuentes($title, bold , 2em , left , $color-blanco);
+            @include fuentes($title, bold, 2em , left , $color-blanco);
             line-height: 1.30em;
             text-shadow: -1px 3px 5px rgba(0, 0, 0, 0.6);
             animation: title 2.5s ease 0s; 
@@ -378,7 +380,7 @@ $color-amarillo: #eebd2c;
             margin-bottom: 70px;}
 
         @include resposiveDesigne(992px){ margin-left: 10px;}
-    }
+}
 
 /*......... PAGINA CONTACTOS.............*/
 
