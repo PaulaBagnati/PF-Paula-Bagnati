@@ -149,10 +149,7 @@ $color-amarillo: #eebd2c;
                 color: $color-amarillo; }
 
                 @include resposiveDesigne(992px){
-                    font-size: 3em; /*48px*/ 
-                }
-                @include resposiveDesigne(1200px){
-                    font-size: 5em;
+                    font-size: 4em; /*48px*/ 
                 }
             }
 
@@ -280,6 +277,7 @@ $color-amarillo: #eebd2c;
         }
         span{
             @include fuentes($text, bold, 0.8em, center, $color-fondo);
+
         }
     }
 
@@ -289,7 +287,10 @@ $color-amarillo: #eebd2c;
 
     img{
         width: 2em;
-        margin-right: 10px; }
+        margin-right: 10px;
+        
+        @include resposiveDesigne(992px){width: 4em;}
+    }
 }
   
 /* redes sociales */
@@ -297,14 +298,19 @@ $color-amarillo: #eebd2c;
 .footer__redesSociales ul{
     padding: 0;
     margin: 0;
+
     li{
         list-style: none;
         display: inline-block;
+
         img{
             width: 2em;
+            @include resposiveDesigne(992px){width: 4em;}
+
             &:hover{
                 opacity: 0.8
             }
+           
         }
     }
 }
@@ -465,8 +471,17 @@ $color-amarillo: #eebd2c;
         .section__info-images{
             position: absolute;
             right: 0;
-            top: -6%;
+            top: 0;
+            display: none;
+
+            @include resposiveDesigne(992px){display: block;}
+
+            img{
+                width: 23em;
+                overflow: hidden;
+            }
         }
+
         @include resposiveDesigne(992px){
             width: 30%;
 
@@ -542,15 +557,23 @@ $color-amarillo: #eebd2c;
     width: 100%;
     height: 100vh;
     opacity: 0.5px;
+    
+
 
     .__content{
         background-color: $color-blanco;
         width: 80%;
         @include center();
-        margin-top: 5em;
+        margin-top: 10em;
         padding: 20px;
         border-radius: 20px;
         border: 2px solid $color-amarillo;
+        box-shadow: -7px 6px 14px 0px rgba(0,0,0,0.70);
+
+
+        @include resposiveDesigne(992px){
+            width: 30%;
+            margin-top: 20em}
 
         h2{
             @include fuentes($subtitle, bold, 1.25em /*20px*/, center, $color-fondo);}
@@ -564,7 +587,6 @@ $color-amarillo: #eebd2c;
                 @include botones();}
         }
 
-        @include resposiveDesigne(992px){}
     }
 }
 

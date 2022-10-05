@@ -92,11 +92,8 @@
     color: #eebd2c; }
   @media screen and (min-width: 992px) {
     #images__title {
-      font-size: 3em;
+      font-size: 4em;
       /*48px*/ } }
-  @media screen and (min-width: 1200px) {
-    #images__title {
-      font-size: 5em; } }
 
 @keyframes title {
   0% {
@@ -285,6 +282,9 @@
   .footer__ubicacion img {
     width: 2em;
     margin-right: 10px; }
+    @media screen and (min-width: 992px) {
+      .footer__ubicacion img {
+        width: 4em; } }
 
 /* redes sociales */
 .footer__redesSociales ul {
@@ -295,6 +295,9 @@
     display: inline-block; }
     .footer__redesSociales ul li img {
       width: 2em; }
+      @media screen and (min-width: 992px) {
+        .footer__redesSociales ul li img {
+          width: 4em; } }
       .footer__redesSociales ul li img:hover {
         opacity: 0.8; }
 
@@ -492,7 +495,14 @@
   .section__info .section__info-images {
     position: absolute;
     right: 0;
-    top: -6%; }
+    top: 0;
+    display: none; }
+    @media screen and (min-width: 992px) {
+      .section__info .section__info-images {
+        display: block; } }
+    .section__info .section__info-images img {
+      width: 23em;
+      overflow: hidden; }
   @media screen and (min-width: 992px) {
     .section__info {
       width: 30%; }
@@ -584,10 +594,15 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5em;
+    margin-top: 10em;
     padding: 20px;
     border-radius: 20px;
-    border: 2px solid #eebd2c; }
+    border: 2px solid #eebd2c;
+    box-shadow: -7px 6px 14px 0px rgba(0, 0, 0, 0.7); }
+    @media screen and (min-width: 992px) {
+      .gracias .__content {
+        width: 30%;
+        margin-top: 20em; } }
     .gracias .__content h2 {
       font-family: "Roboto-Medium", sans-serif;
       font-weight: bold;
