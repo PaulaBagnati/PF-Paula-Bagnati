@@ -12,9 +12,7 @@
   word-spacing: 0.2em;
   background-color: #4d4d4d; }
 
-/*..........................................
-........... header ...........................
-............................................*/
+/*....................HEADER.................*/
 #section__header {
   width: 100%;
   height: auto;
@@ -55,9 +53,7 @@
   .header__nav ul li a:hover {
     color: #eebd2c; }
 
-/*..........................................
-.......... section__images ....................
-...............................................*/
+/*.......... BANNER............*/
 #section__images {
   background-image: url("../assets/img/banner.png");
   background-repeat: no-repeat;
@@ -142,6 +138,7 @@
   color: #4d4d4d;
   text-decoration: none;
   background-color: #f1f1f1;
+  color: #4d4d4d;
   padding: 5px 50px;
   border: 4px solid #eebd2c;
   border-radius: 50px;
@@ -157,9 +154,7 @@
       /*20px*/
       padding: 10px 87px; } }
 
-/* ............................................
-..........section__queHacemos ....................
-...................................................*/
+/* .............SECTION QUE-HACEMOS...........*/
 #section__queHacemos {
   height: auto;
   text-align: center;
@@ -217,6 +212,7 @@
     color: #4d4d4d;
     text-decoration: none;
     background-color: #f1f1f1;
+    color: #4d4d4d;
     padding: 5px 50px;
     border: 4px solid #eebd2c;
     border-radius: 50px;
@@ -232,9 +228,7 @@
       /*20px*/
       padding: 10px 84px; } }
 
-/* ....................................
-........section__marcas.................
-......................................*/
+/* ........SECTION MARCAS...........................*/
 #section__marcas {
   width: 100vw;
   height: auto;
@@ -255,9 +249,7 @@
         #section__marcas .section__marcas-content img {
           width: 5em; } }
 
-/* ....................................
-................footer................
-......................................*/
+/* ............FOOTER..................*/
 #footer {
   width: 100%;
   position: relative;
@@ -306,9 +298,7 @@
       .footer__redesSociales ul li img:hover {
         opacity: 0.8; }
 
-/*................................
-......... PAGINA PRODUCTOS..................
-.................................... */
+/*......... PAGINA PRODUCTOS................ */
 #product {
   position: relative;
   margin-top: 4.5em;
@@ -318,7 +308,7 @@
     opacity: 0.7;
     right: 0;
     top: 1%; }
-  #product.product__img-rowLeft {
+  #product .product__img-rowLeft {
     position: absolute;
     opacity: 0.7;
     left: 0;
@@ -388,9 +378,7 @@
     .product__content-card {
       margin-left: 10px; } }
 
-/*................................
-......... PAGINA CONTACTOS.................
-.................................... */
+/*......... PAGINA CONTACTOS.............*/
 .content_section-contact {
   display: flex;
   flex-direction: column;
@@ -445,7 +433,7 @@
     padding-left: 10px;
     margin-bottom: 20px; }
   .section__form textarea {
-    background-color: var(--blanco);
+    background-color: #f1f1f1;
     width: 90%;
     height: 150px;
     border-radius: 5px;
@@ -472,6 +460,7 @@
       color: #4d4d4d;
       text-decoration: none;
       background-color: #f1f1f1;
+      color: #4d4d4d;
       padding: 5px 50px;
       border: 4px solid #eebd2c;
       border-radius: 50px;
@@ -483,7 +472,8 @@
         transition: 0.5s 0s ease-in-out; }
   @media screen and (min-width: 768px) {
     .section__form {
-      width: 50%; } }
+      width: 50%;
+      padding: 50px; } }
 
 .section__info {
   padding: 15px; }
@@ -519,9 +509,6 @@
         text-align: left;
         color: #f1f1f1; } }
 
-/*................................
-......... PAGINA NOSOTROS..................
-.................................... */
 .nosotros {
   margin-top: 80px; }
 
@@ -553,7 +540,7 @@
       .nosotros__content h2 {
         font-family: "Roboto-Medium", sans-serif;
         font-weight: bold;
-        font-size: 3em;
+        font-size: 2em;
         text-align: center;
         color: #f1f1f1; } }
   .nosotros__content .nosotros__text {
@@ -577,6 +564,55 @@
         .nosotros__content .nosotros__text p {
           font-family: "Roboto-Medium", sans-serif;
           font-weight: none;
-          font-size: 1.25em;
+          font-size: 1.15em;
           text-align: justify;
           color: #f1f1f1; } }
+
+.gracias {
+  background-image: url("../assets/img/banner.png");
+  background-attachment: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.5px; }
+  .gracias .__content {
+    background-color: #f1f1f1;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #eebd2c; }
+    .gracias .__content h2 {
+      font-family: "Roboto-Medium", sans-serif;
+      font-weight: bold;
+      font-size: 1.25em;
+      text-align: center;
+      color: #4d4d4d; }
+    .gracias .__content p {
+      font-family: "Roboto-Medium", sans-serif;
+      font-weight: none;
+      font-size: 1em;
+      text-align: center;
+      color: #4d4d4d; }
+    .gracias .__content .__btn {
+      text-align: center;
+      margin-top: 50px; }
+      .gracias .__content .__btn a {
+        text-decoration: none;
+        background-color: #f1f1f1;
+        color: #4d4d4d;
+        padding: 5px 50px;
+        border: 4px solid #eebd2c;
+        border-radius: 50px;
+        box-shadow: -7px 6px 14px 0px rgba(0, 0, 0, 0.7); }
+        .gracias .__content .__btn a:hover {
+          color: #4d4d4d;
+          background-color: #eebd2c;
+          border: #f1f1f1 4px solid;
+          transition: 0.5s 0s ease-in-out; }
