@@ -30,8 +30,7 @@ $color-amarillo: #eebd2c;
     padding: 5px 50px;
     border: 4px solid $color-amarillo;
     border-radius:50px;
-    box-shadow:  10px -10px 20px #414141,
-                 -10px 10px 20px #595959;
+    box-shadow: -7px 6px 14px 0px rgba(0,0,0,0.70);
         
         &:hover{
             color:$color-fondo;
@@ -296,6 +295,10 @@ $color-amarillo: #eebd2c;
         & .footer__content{
             @include flexible(flex, column, wrap, space-around, center);
             padding: 15px;
+
+            @include resposiveDesigne(992px){
+                @include flexible(flex, row, nowrap, space-evenly, center);
+            }
         }
 
         & span{
@@ -410,26 +413,182 @@ $color-amarillo: #eebd2c;
 ......... PAGINA CONTACTOS.................
 .................................... */
 
+.content_section-contact{
+    @include flexible(flex, column, wrap, center, center);
+    margin-top: 150px;
+
+    @include resposiveDesigne(992px){
+        width: 80%;
+        @include flexible(flex, row, nowrap, space-evenly, center);
+    }
+}
+
 .section__contact {
     width: 100%;
-    margin-top: 150px;
     position: relative;
     @include flexible(flex, row, flex, space-around, center);
 }
 
 .section__form {
-    width: 30%;
+    width: 90%;
     height: 700px;
     border-radius: 10px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    background-color: $color-blanco;
-    padding-left: 30px;
+    padding: 15px;
+    // padding: 50px 30px 0px 30px;
     margin-bottom: 50px;
+    background-color: $color-blanco;
     box-shadow: -7px 6px 14px 0px rgba(0,0,0,0.70);
+
+        & h2{
+            @include fuentes($subtitle, bolder, 1.5em /*24px*/, center, $color-fondo);
+
+                & span{
+                    font-family: $subtitle;
+                    color: $color-amarillo;
+                }
+        }
+
+        & input{
+            background-color: $color-blanco;
+            width: 90%;
+            height: 40px;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: $color-amarillo;
+            margin-top: 10px;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        & textarea {
+            background-color: var(--blanco);
+            width: 90%;
+            height: 150px;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: $color-amarillo;
+            padding-left: 10px;
+            padding-top: 15px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        & label {
+            display: block;
+            font-family: $subtitle;
+            color: $color-fondo;
+            margin-top: 15px;    
+        }
+
+
+        .section__form-btn{
+            text-align: center;
+            margin-top: 20px;
+
+        & a{
+            @include fuentes($subtitle, bolder, none, center, $color-fondo);
+            @include botones();
+        }
+
+        }
+
+    @include resposiveDesigne(768px){
+        width: 50%;}   
+
+}
+   
+.section__info{
+    padding: 15px;
+
+        & h2{
+            @include fuentes($subtitle, none, 1.15em /*18.4px*/, left, $color-amarillo);}
+
+        & p{
+            @include fuentes($text, none, 1em /*16px*/, left, $color-blanco);}
+
+        .section__info-images{
+            position: absolute;
+            right: 0;
+            top: -6%;
+        }
+
+        @include resposiveDesigne(992px){
+            width: 30%;
+
+            h2{
+                @include fuentes($subtitle, none, 1.55em /*24.5px*/, left, $color-amarillo);}
+            
+            p{
+                 @include fuentes($text, none, 1.15em /*18.4px*/, left, $color-blanco);}
+        }
 }
 
+
+/*................................
+......... PAGINA NOSOTROS..................
+.................................... */
+.nosotros{
+    margin-top: 80px;
+}
+
+.nosotros__content{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+    .nosotros__content-images{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    
+        & img{
+            width: 100%;
+            object-fit: cover;
+            border: $color-amarillo 2px solid;
+            border-radius: 7px;
+            box-shadow: -7px 6px 14px 0px rgba(0,0,0,0.70);
+        }
+    }
+
+    & h2{
+        @include fuentes($subtitle, none, 1.125em /*16px*/, center, $color-blanco);
+            margin-top: 1.5em;    
+
+            & span{
+                color: $color-amarillo;    
+        }
+
+        @include resposiveDesigne(992px){ @include fuentes($subtitle, bold, 3em /*48px*/, center, $color-blanco);}
+ 
+    }
+
+    .nosotros__text{
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
         
+        @include resposiveDesigne(992px){
+            grid-template-columns: 1fr 1fr;
+            gap: 40px
+             
+        }
+
+        & p{
+            @include fuentes($text, none, 1em /*16px*/, justify, $color-blanco);
+            line-height: 24px;  
+            
+            @include resposiveDesigne(992px){ @include fuentes($subtitle, none, 1.25em /*20px*/, justify, $color-blanco);}
+        }
+          
+    }
+
+}
+  
     
 
 
