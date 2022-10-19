@@ -1,0 +1,45 @@
+// .............GRACIAS..................
+
+.gracias{
+    background-image: url("../assets/img/banner.png");
+    background-attachment: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.5px;
+    
+
+
+    .__content{
+        background-color: $color-blanco;
+        width: 80%;
+        @include center();
+        margin-top: 10em;
+        padding: 20px;
+        border-radius: 20px;
+        border: 2px solid $color-amarillo;
+        box-shadow: -7px 6px 14px 0px rgba(0,0,0,0.70);
+
+
+        @include resposiveDesigne(992px){
+            width: 30%;
+            margin-top: 20em}
+
+        h2{
+            @include fuentes(subtitle, bold, 1.25em /*20px*/, center, $color-fondo);}
+        p{
+            @include fuentes(subtitle, none, 1em /*16px*/, center, $color-fondo);}
+
+        .__btn{
+            text-align: center;
+            margin-top: 50px;      
+            a{
+                @include botones();}
+        }
+
+    }
+}

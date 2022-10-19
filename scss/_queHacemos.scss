@@ -1,0 +1,48 @@
+/* .............SECTION QUE-HACEMOS...........*/
+#section__queHacemos {
+    height: auto;
+    text-align: center;
+    margin-top: 1.87em; /*30px*/ 
+
+    h2{
+        @include fuentes (subtitle, bold, 1.25em, center, $color-blanco);
+        margin-bottom: 1.85em; /*30px*/
+        @include resposiveDesigne(1200px){ font-size: 1.5em;
+            /*24px*/}
+    }
+
+    .cards{
+        img{
+            width: 4em;    /*64px*/
+            display: block;
+            @include center();
+            padding: 15px; 
+
+            @include resposiveDesigne(1200px){width: 5em;}
+            }
+        }
+        h3{
+            @include fuentes (subtitle, none, 1.05em, center, $color-amarillo);
+        }
+        p{
+            @include fuentes (text, none, 0.85em, justify, $color-blanco);
+            padding: 15px; 
+            line-height: 1.5;
+
+            @include resposiveDesigne(1200px){font-size: 1.125em;
+                /*18px*/ } }
+        }
+
+    .section__queHacemos-btn {
+        margin: 1.87em 0 1.87em 0;  /*30px*/
+        
+        a{
+            @include fuentes(subtitle, bolder, none, center, $color-fondo);
+            @include botones()
+        }
+        @include resposiveDesigne(992px){
+            font-size: 1.25em; /*20px*/
+            padding: 10px 84px;
+        }
+    }  
+    

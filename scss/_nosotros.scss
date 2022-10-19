@@ -1,0 +1,51 @@
+//............ PAGINA NOSOTROS.............
+.nosotros{
+    margin-top: 80px;
+}
+
+.nosotros__content{
+    width: 80%;
+    @include center();
+    margin-top: 20px;
+
+    .nosotros__content-images{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    
+        img{
+            width: 100%;
+            object-fit: cover;
+            border: $color-amarillo 2px solid;
+            border-radius: 7px;
+            box-shadow: -7px 6px 14px 0px rgba(0,0,0,0.70);
+        }
+    }
+    h2{
+        @include fuentes(subtitle, none, 1.125em /*16px*/, center, $color-blanco);
+            margin-top: 1.5em;    
+
+            span{
+                color: $color-amarillo;}
+
+        @include resposiveDesigne(992px){ @include fuentes(subtitle, bold, 2em /*48px*/, center,   $color-blanco);}
+    }
+    .nosotros__text{
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        
+        @include resposiveDesigne(992px){
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;}
+
+        p{
+            @include fuentes(text, none, 1em /*16px*/, justify, $color-blanco);
+            line-height: 24px;  
+            
+            @include resposiveDesigne(992px){ @include fuentes(subtitle, none, 1.15em /*20px*/, justify, $color-blanco);}
+        }
+    }
+}

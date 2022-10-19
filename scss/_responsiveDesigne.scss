@@ -1,0 +1,6 @@
+// RESPONSIVE DESIGNE 
+@mixin resposiveDesigne ($medida: 480px){ //mobil
+    @media screen and (min-width: $medida) {
+        @content;
+    }
+}

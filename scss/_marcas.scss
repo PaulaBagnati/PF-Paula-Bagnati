@@ -1,0 +1,17 @@
+/* ........SECTION MARCAS...........................*/
+#section__marcas {
+    width: 100vw;
+    height: auto;
+    background-color: $color-blanco; 
+    padding: 15px;
+
+    .section__marcas-content{
+        @include flexible(flex , row , nowrap , space-around , center);
+        
+        img{ 
+            width: 2em;
+            @include resposiveDesigne(992px){width: 4em;}
+            @include resposiveDesigne(1200px){width: 5em;}
+        }
+    }
+}

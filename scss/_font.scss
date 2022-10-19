@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "title", sans-serif;
+    src: url("../assets/font/Roboto-Bold.ttf");
+    }
+
+    @font-face {
+        font-family: "subtitle", sans-serif;
+        src: url("../assets/font/Roboto-Medium.ttf");
+        }
+
+        @font-face {
+            font-family: "parrafo", sans-serif;
+            src: url("../assets/font/Roboto-Regular.ttf");
+            }
+
+           // VARIABLES FUENTES
+            $title: 'title', sans-serif;
+            $subtitle: 'subtitle', sans-serif;
+            $text: 'parrafo', sans-serif;
+
+
+
+            @mixin fuentes($family , $bold, $size , $font-align , $font-color){
+                font-family: $family;
+            
+                @if $bold != "none" {font-weight: $bold;}
+                @if $size != "none" {font-size: $size;}
+                text-align: $font-align;
+                color: $font-color;
+            }
