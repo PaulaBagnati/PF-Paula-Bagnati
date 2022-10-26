@@ -11,15 +11,16 @@
 
     <!-- titulo -->
     <title>Lubriservice Los Incas |Dejanos tu mensaje</title>
-     <link rel="icon" type="imagen/png" href="../assets/img/logo.ico" alt="logo">
+    <link rel="icon" type="imagen/png" href="../assets/img/logo.ico" alt="logo">
 
     <!-- Bootstrap v5.2.1-->
-    <!-- estilos css  -->
-    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
-
-     <!-- Bootstrap v5.2.1-->
     <!-- js-->
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+    <!-- Font Awesomw 6 -->
+    <script src="https://kit.fontawesome.com/34caccda87.js" crossorigin="anonymous"></script>
+
 
     <!-- estilos -->
     <link rel="stylesheet" href="../css/stylescss.css">
@@ -31,7 +32,7 @@
     <header id="section__header">
         <nav class="navbar navbar-expand-lg header__nav">
             <div class="container">
-                 <a class="navbar-brand nav__logo" href="../index.html"> <img src="../assets/img/logoBlanco.png" alt="Logo Lubriservice"><span>Lubriservice Los Incas</span></a>
+                <a class="navbar-brand nav__logo" href="../index.html"> <img src="../assets/img/logoBlanco.png" alt="Logo Lubriservice"><span>Lubriservice Los Incas</span></a>
                 <button class="navbar-toggler nav__btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span><img src="../assets/img/logo-navbar.png" alt=""></span>
                 </button>
@@ -58,69 +59,67 @@
 
     <!-- section contacto -->
 
-    <main class="content_section-contact">
+    <main class="contact container">
 
-        <section class="section__contact">
+        <section class="contact__content">
 
-            <div class="section__form">
+            <div class="contact__form">
 
-            <h2>Solicitá un turno, <span>o dejanos tu consulta</span></h2>
+                <h2>Solicitá un turno, <span>o dejanos tu consulta</span></h2>
 
-            <form action="#" method="post">
-
-                <div>
-                    <label for="nombre" class="colocar_nombre">Nombre</label>
-                    <input type="text" name="introducir_nombre" id="nombre" required >
-                    </div>
-                
+                <form action="#" method="post">
                     <div>
-                    <label for="email" class="colocar_email">Email</label>
-                    <input type="email" name="introducir_email" id="email" required>
+                        <label for="nombre" class="colocar_nombre">Nombre</label>
+                        <input type="text" name="introducir_nombre" id="nombre" required >
                     </div>
-                
-                    <div>
-                    <label for="telefone" class="colocar_telefono">Teléfono</label>
-                    <input type="number" name="introducir_telefono" id="telefono" >
-                    </div>
-
-                <div>
                     
-                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required placeholder="Deja aquí tu comentario..."></textarea>
-            
-                <div class="section__form-btn">
-                    <a href="../page/gracias.html">Contactanos</a>
-                </div>              
+                    <div>
+                        <label for="email" class="colocar_email">Email</label>
+                        <input type="email" name="introducir_email" id="email" required>
+                    </div>
+                    
+                    <div>
+                        <label for="telefone" class="colocar_telefono">Teléfono</label>
+                        <input type="number" name="introducir_telefono" id="telefono" >
+                    </div>
+                    
+                    <div>
+                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required placeholder="Deja aquí tu comentario..."></textarea>
+                    </div>
                 
-            </form>
+                    <div class="section__form-btn">
+                        <a href="../page/gracias.html">Contactanos</a>
+                    </div>              
+                    
+                </form>
+
+            </div>
 
         </section>
 
             <!-- section info -->
-        <section class="section__info">
-
-            <div class="section__info-images">
-                <img src="../assets/img/row.png">
-            </div>
+        <section class="contact__info">
 
             <div>
-                <h2>Horarios de atención:</h2>
-                <p>lunes a viernes de 8.30hs a 18.30hs <br>
-                    sábados hasta las 15hs
+                <h2><i class="fa-regular fa-clock"></i> Horarios de atención:</h2>
+                <p>Lunes a Viernes de 8.30hs. a 18.30hs. <br>
+                    Sábados hasta las 15hs.
                 </p> 
             </div>
             <div>
-                <h2>Telefono</h2>
+                <h2><i class="fa fa-phone"></i> Teléfono:</h2>
                 <p>15-222-2222</p> 
             </div>
             <div>
-                <h2>Email</h2>
+                <h2><i class="fa-regular fa-envelope"></i> Email:</h2>
                 <p>lubrilosincas@gmail.com</p> 
+            </div>
+
+            <div class="contact__info-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6349614452806!2d-58.485828883865324!3d-34.588102064180816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb61518690bc9%3A0xba51eaf2a821ac25!2sLubriservice%20Los%20Incas!5e0!3m2!1ses!2sar!4v1666740439430!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
     
         </section>
-
-
-        section mapa 
 
     </main>
 

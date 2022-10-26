@@ -1,0 +1,39 @@
+#section__images {
+    background-image: url("../assets/img/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; }  
+
+    .content__section-images {
+        position: absolute;
+        @include flexible(flex, column, wrap, space-around, flex-start);
+        @include center; }
+
+        #images__title {
+            @include fuentes('Roboto', 900, 2em , left , $color-blanco);
+            line-height: 1.30em;
+            text-shadow: -1px 3px 5px rgba(0, 0, 0, 0.6);
+            animation: rebote 2.5s ease 0s; 
+
+            span{                
+                color: $color-amarillo; }
+
+                @include resposiveDesigne(992px){
+                    font-size: 4.5em; /*72px*/ 
+                }
+            }
+
+                .content__section-images a {
+                    @include botones();
+                
+                    @include resposiveDesigne(992px){
+                        font-size: 1.25em;  /*20px*/
+                        padding: 10px 87px;}
+                    }

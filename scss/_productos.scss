@@ -27,7 +27,7 @@
 
 .product__content{
     @include flexible(flex, column, flex, space-between, center);
-
+    
     @include resposiveDesigne(992px){
     @include flexible(flex, row, flex, space-between, flex-start);}
 }

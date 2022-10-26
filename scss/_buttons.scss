@@ -1,6 +1,7 @@
 //BOTONES
 @mixin botones() {
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
     background-color: $color-blanco;
     color:$color-fondo;
     padding: 5px 50px;

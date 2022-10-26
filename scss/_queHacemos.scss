@@ -5,7 +5,7 @@
     margin-top: 1.87em; /*30px*/ 
 
     h2{
-        @include fuentes (subtitle, bold, 1.25em, center, $color-blanco);
+        @include fuentes ("Roboto", bold, 1.25em, center, $color-blanco);
         margin-bottom: 1.85em; /*30px*/
         @include resposiveDesigne(1200px){ font-size: 1.5em;
             /*24px*/}
@@ -15,17 +15,17 @@
         img{
             width: 4em;    /*64px*/
             display: block;
-            @include center();
+            @include margin-0();
             padding: 15px; 
 
             @include resposiveDesigne(1200px){width: 5em;}
             }
         }
         h3{
-            @include fuentes (subtitle, none, 1.05em, center, $color-amarillo);
+            @include fuentes ("Roboto", none, 1.05em, center, $color-amarillo);
         }
         p{
-            @include fuentes (text, none, 0.85em, justify, $color-blanco);
+            @include fuentes ("Roboto", none, 0.85em, justify, $color-blanco);
             padding: 15px; 
             line-height: 1.5;
 
@@ -37,7 +37,7 @@
         margin: 1.87em 0 1.87em 0;  /*30px*/
         
         a{
-            @include fuentes(subtitle, bolder, none, center, $color-fondo);
+            @include fuentes("Roboto", bolder, none, center, $color-fondo);
             @include botones()
         }
         @include resposiveDesigne(992px){

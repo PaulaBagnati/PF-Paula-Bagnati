@@ -5,7 +5,9 @@
 @import 'font';
 @import 'buttons';
 @import 'center';
+@import 'animations';
 @import 'header';
+@import 'banner';
 @import 'queHacemos';
 @import 'marcas';
 @import 'nosotros';
@@ -15,5 +17,5 @@
 @import 'footer';
 
 
-
+@import "../node_modules/bootstrap/scss/bootstrap";
 

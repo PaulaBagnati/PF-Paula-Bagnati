@@ -5,7 +5,7 @@
 
 .nosotros__content{
     width: 80%;
-    @include center();
+    @include margin-0();
     margin-top: 20px;
 
     .nosotros__content-images{
