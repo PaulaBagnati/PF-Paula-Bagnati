@@ -6,9 +6,22 @@
 
     @mixin fuentes($family , $bold, $size , $font-align , $font-color){
         font-family: $family;
-            
+        @if $family != "none" {font-weight: $bold;}  
         @if $bold != "none" {font-weight: $bold;}
         @if $size != "none" {font-size: $size;}
         text-align: $font-align;
         color: $font-color;
     }
+
+
+
+    //MIXIN A PROBAR
+    
+    // @mixin fuentes($family , $bold, $size , $font-align , $font-color){
+    //     @if $family != "none" { font-family: $family;}  
+    //     @if $bold != "none" {font-weight: $bold;}
+    //     @if $size != "none" {font-size: $size;}
+    //     @if $font-align != "none" {text-align: $font-align;}
+    //     @if $font-color != "none" { color: $font-color;}
+        
+    // }

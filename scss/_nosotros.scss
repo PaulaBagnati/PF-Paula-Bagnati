@@ -4,8 +4,7 @@
 }
 
 .nosotros__content{
-    width: 80%;
-    @include margin-0();
+@include margin-0();
     margin-top: 20px;
 
     .nosotros__content-images{
@@ -22,13 +21,13 @@
         }
     }
     h2{
-        @include fuentes(subtitle, none, 1.125em /*16px*/, center, $color-blanco);
+        @include fuentes('Roboto', none, 1.125em /*16px*/, center, $color-blanco);
             margin-top: 1.5em;    
 
             span{
                 color: $color-amarillo;}
 
-        @include resposiveDesigne(992px){ @include fuentes(subtitle, bold, 2em /*48px*/, center,   $color-blanco);}
+        @include resposiveDesigne(992px){ @include fuentes('Roboto', bold, 2em /*48px*/, center,   $color-blanco);}
     }
     .nosotros__text{
         width: 100%;
@@ -42,10 +41,10 @@
             gap: 40px;}
 
         p{
-            @include fuentes(text, none, 1em /*16px*/, justify, $color-blanco);
+            @include fuentes('Roboto', none, 1em /*16px*/, justify, $color-blanco);
             line-height: 24px;  
             
-            @include resposiveDesigne(992px){ @include fuentes(subtitle, none, 1.15em /*20px*/, justify, $color-blanco);}
+            @include resposiveDesigne(992px){ @include fuentes('Roboto', none, 1.15em /*20px*/, justify, $color-blanco);}
         }
     }
 }

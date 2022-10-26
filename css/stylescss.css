@@ -113,6 +113,7 @@
 #images__title {
   font-family: "Roboto";
   font-weight: 900;
+  font-weight: 900;
   font-size: 2em;
   text-align: left;
   color: #f1f1f1;
@@ -155,6 +156,7 @@
   #section__queHacemos h2, #section__queHacemos .h2 {
     font-family: "Roboto";
     font-weight: bold;
+    font-weight: bold;
     font-size: 1.25em;
     text-align: center;
     color: #f1f1f1;
@@ -176,11 +178,13 @@
         width: 5em; } }
   #section__queHacemos h3, #section__queHacemos .h3 {
     font-family: "Roboto";
+    font-weight: none;
     font-size: 1.05em;
     text-align: center;
     color: #eebd2c; }
   #section__queHacemos p {
     font-family: "Roboto";
+    font-weight: none;
     font-size: 0.85em;
     text-align: justify;
     color: #f1f1f1;
@@ -196,6 +200,7 @@
   /*30px*/ }
   .section__queHacemos-btn a {
     font-family: "Roboto";
+    font-weight: bolder;
     font-weight: bolder;
     text-align: center;
     color: #4d4d4d;
@@ -243,7 +248,6 @@
   margin-top: 80px; }
 
 .nosotros__content {
-  width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px; }
@@ -258,7 +262,8 @@
       border-radius: 7px;
       box-shadow: -7px 6px 14px 0px rgba(0, 0, 0, 0.7); }
   .nosotros__content h2, .nosotros__content .h2 {
-    font-family: subtitle;
+    font-family: "Roboto";
+    font-weight: none;
     font-size: 1.125em;
     text-align: center;
     color: #f1f1f1;
@@ -267,7 +272,8 @@
       color: #eebd2c; }
     @media screen and (min-width: 992px) {
       .nosotros__content h2, .nosotros__content .h2 {
-        font-family: subtitle;
+        font-family: "Roboto";
+        font-weight: bold;
         font-weight: bold;
         font-size: 2em;
         text-align: center;
@@ -283,14 +289,16 @@
         grid-template-columns: 1fr 1fr;
         gap: 40px; } }
     .nosotros__content .nosotros__text p {
-      font-family: text;
+      font-family: "Roboto";
+      font-weight: none;
       font-size: 1em;
       text-align: justify;
       color: #f1f1f1;
       line-height: 24px; }
       @media screen and (min-width: 992px) {
         .nosotros__content .nosotros__text p {
-          font-family: subtitle;
+          font-family: "Roboto";
+          font-weight: none;
           font-size: 1.15em;
           text-align: justify;
           color: #f1f1f1; } }
@@ -313,6 +321,7 @@
 
 .product__images-fondo h2, .product__images-fondo .h2 {
   font-family: subtitle;
+  font-weight: none;
   font-size: 1.25em;
   text-align: center;
   color: #f1f1f1;
@@ -357,11 +366,13 @@
         margin-bottom: 15px; } }
   .product__content-card h3, .product__content-card .h3 {
     font-family: subtitle;
+    font-weight: none;
     font-size: 1.25em;
     text-align: center;
     color: #eebd2c; }
   .product__content-card p {
     font-family: subtitle;
+    font-weight: none;
     text-align: justify;
     color: #f1f1f1;
     line-height: 25px;
@@ -406,6 +417,7 @@
     margin-bottom: 1em;
     font-family: "Roboto";
     font-weight: 600;
+    font-weight: 600;
     font-size: 1.5em;
     text-align: center;
     color: #4d4d4d;
@@ -435,6 +447,9 @@
     padding-top: 15px;
     margin-top: 10px;
     margin-bottom: 13px; }
+    @media screen and (min-width: 992px) {
+      .contact__form textarea {
+        height: 240px; } }
   .contact__form label {
     display: block;
     font-family: 'Roboto', sans-serif;
@@ -462,10 +477,12 @@
       height: 717px; } }
   @media screen and (min-width: 992px) {
     .contact__form {
-      width: 100%; } }
+      width: 100%;
+      padding: 30px; } }
 
 .contact__info h2, .contact__info .h2 {
   font-family: "Roboto";
+  font-weight: 700;
   font-weight: 700;
   font-size: 1.15em;
   text-align: left;
@@ -473,13 +490,16 @@
 
 .contact__info p {
   font-family: "Roboto";
+  font-weight: none;
   font-size: 0.9em;
   text-align: left;
   color: #f1f1f1; }
 
 .contact__info .contact__info-map iframe {
   width: 100%;
-  height: 450px; }
+  height: 450px;
+  border-radius: 10%;
+  outline: 2px #eebd2c solid; }
 
 @media screen and (min-width: 992px) {
   .contact__info {
@@ -513,11 +533,13 @@
     .gracias .__content h2, .gracias .__content .h2 {
       font-family: subtitle;
       font-weight: bold;
+      font-weight: bold;
       font-size: 1.25em;
       text-align: center;
       color: #4d4d4d; }
     .gracias .__content p {
       font-family: subtitle;
+      font-weight: none;
       font-size: 1em;
       text-align: center;
       color: #4d4d4d; }
@@ -539,7 +561,6 @@
           border: #f1f1f1 4px solid;
           transition: 0.5s 0s ease-in-out; }
 
-/* ............FOOTER..................*/
 #footer {
   width: 100%;
   position: relative;
@@ -559,8 +580,8 @@
         justify-content: space-evenly;
         align-items: center; } }
   #footer span {
-    font-family: text;
-    font-weight: bold;
+    font-family: "Roboto";
+    font-weight: none;
     font-size: 0.8em;
     text-align: center;
     color: #4d4d4d; }
@@ -577,7 +598,7 @@
     margin-right: 10px; }
     @media screen and (min-width: 992px) {
       .footer__ubicacion img {
-        width: 4em; } }
+        width: 2em; } }
 
 /* redes sociales */
 .footer__redesSociales ul {
@@ -590,9 +611,23 @@
       width: 2em; }
       @media screen and (min-width: 992px) {
         .footer__redesSociales ul li img {
-          width: 4em; } }
+          width: 2em; } }
       .footer__redesSociales ul li img:hover {
         opacity: 0.8; }
+
+/*Copy*/
+.footer__copy {
+  text-align: center; }
+  .footer__copy small, .footer__copy .small {
+    font-family: "Roboto";
+    font-weight: none;
+    font-size: 0.6em;
+    text-align: center;
+    color: #4d4d4d;
+    padding: 10px;
+    line-height: normal; }
+  .footer__copy .footer__icon-copy {
+    margin-right: 4px; }
 
 /*!
    * Bootstrap  v5.2.2 (https://getbootstrap.com/)
