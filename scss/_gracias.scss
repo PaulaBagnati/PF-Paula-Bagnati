@@ -30,9 +30,9 @@
             margin-top: 20em}
 
         h2{
-            @include fuentes(subtitle, bold, 1.25em /*20px*/, center, $color-fondo);}
+            @include fuentes('Roboto', bold, 1.25em /*20px*/, center, $color-fondo);}
         p{
-            @include fuentes(subtitle, none, 1em /*16px*/, center, $color-fondo);}
+            @include fuentes('Roboto', none, 1em /*16px*/, center, $color-fondo);}
 
         .__btn{
             text-align: center;

@@ -3,32 +3,27 @@
     margin-top: 80px;
 }
 
-.nosotros__content{
-@include margin-0();
-    margin-top: 20px;
-
-    .nosotros__content-images{
+    .nostros__images{
+        background-image: url('../assets/img/banner-nosotros.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right center;
         width: 100%;
-        height: auto;
+        height: 95vh;
         overflow: hidden;
-    
-        img{
-            width: 100%;
-            object-fit: cover;
-            border: $color-amarillo 2px solid;
-            border-radius: 7px;
-            box-shadow: -7px 6px 14px 0px rgba(0,0,0,0.70);
-        }
     }
+
+.nosotros__content{
+
     h2{
-        @include fuentes('Roboto', none, 1.125em /*16px*/, center, $color-blanco);
-            margin-top: 1.5em;    
+        @include fuentes('Roboto', none, 1.5em /*24px*/, center, $color-blanco);
+            margin-top: 1.5em;   
 
             span{
                 color: $color-amarillo;}
 
         @include resposiveDesigne(992px){ @include fuentes('Roboto', bold, 2em /*48px*/, center,   $color-blanco);}
-    }
+        }
     .nosotros__text{
         width: 100%;
         display: grid;

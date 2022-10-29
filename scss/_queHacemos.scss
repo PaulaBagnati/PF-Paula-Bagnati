@@ -5,9 +5,9 @@
     margin-top: 1.87em; /*30px*/ 
 
     h2{
-        @include fuentes ("Roboto", bold, 1.25em, center, $color-blanco);
+        @include fuentes ("Roboto", bold, 1.5em, center, $color-blanco);
         margin-bottom: 1.85em; /*30px*/
-        @include resposiveDesigne(1200px){ font-size: 1.5em;
+        @include resposiveDesigne(1200px){ font-size: 2em;
             /*24px*/}
     }
 
